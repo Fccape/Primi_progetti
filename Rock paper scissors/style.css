@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://i.pinimg.com/originals/f6/03/04/f6030493dcccc9247646ec29a4f962f3.jpg)
+    no-repeat;
+  background-size: cover;
+}
+
+section {
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.punteggio {
+  height: 20vh;
+  color: gold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h2.punteggio {
+  font-size: 30px;
+}
+
+.punteggio p {
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.intro h2 {
+  font-size: 25px;
+}
+
+.intro {
+  color: gold;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: opacity 0.5s ease;
+}
+
+.gioco {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: gold;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease 0.5s;
+}
+
+.intro button {
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  background: rgb(45, 117, 96);
+  color: rgb(224, 224, 224);
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+}
+
+.scelta button {
+  cursor: pointer;
+  color: white;
+  border: 2px solid green;
+  border-radius: 1rem;
+  background: none;
+  font-size: 2rem;
+  align-items: center;
+  width: 50%;
+  margin: 15px;
+}
+
+.titolo {
+  text-align: center;
+}
+
+.mani,
+.scelta {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mani {
+  padding: 20px;
+}
+
+.sceltaGiocatore {
+  padding: 50px;
+}
+
+.sceltaComputer {
+  transform: rotateY(180deg);
+  padding: 50px;
+}
+
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@keyframes shakePlayer {
+  0% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(-50px);
+  }
+  30% {
+    transform: translateY(0px);
+  }
+  45% {
+    transform: translateY(-50px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes shakeComputer {
+  0% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  15% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  30% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  45% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  60% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  75% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  100% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+}
