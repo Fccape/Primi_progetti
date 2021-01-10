@@ -1,0 +1,21 @@
+main .row .menu a img {
+  width: 200px;
+  cursor: pointer;
+}
+
+main {
+  padding: 40px;
+}
+
+main div .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main div .pulsante {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

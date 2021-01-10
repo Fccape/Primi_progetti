@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.myButton {
+  background-color: #ef7d00;
+  box-shadow: 3px 4px 0px 0px #abbabe;
+  border-radius: 28px;
+  border: 1px solid #ef7d00;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+
+.myButton:hover {
+  background-color: #ff8605;
+  color: #ffffff;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+i {
+  color: black;
+  font-size: 20px;
+}
+
+i:hover {
+  color: #ef7d00;
+}
