@@ -1,13 +1,17 @@
+html > * {
+  background-color: #f9fbfc;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
 .myButton {
-  background-color: #ef7d00;
+  background-color: #f07d00;
   box-shadow: 3px 4px 0px 0px #abbabe;
   border-radius: 28px;
-  border: 1px solid #ef7d00;
+  border: 1px solid #f07d00;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;

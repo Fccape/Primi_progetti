@@ -1,11 +1,10 @@
 header {
-  background-color: rgb(233, 231, 231);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #f9fbfc;
+  /* max-width 1600px;
+  width 100%; */
 }
 
-ul {
+header ul {
   margin: 0;
   padding: 0;
 }

@@ -11,6 +11,7 @@ main div .menu {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px;
 }
 
 main div .pulsante {
