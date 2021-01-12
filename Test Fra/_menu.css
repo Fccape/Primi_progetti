@@ -25,3 +25,33 @@ main .row .menu a img {
 main .row .menu a img:hover {
   transform: scale(0.9);
 }
+
+main .row .menu .pin .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+main .row .menu .pin .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+main .row .menu .pin:hover .tooltiptext {
+  visibility: visible;
+}
