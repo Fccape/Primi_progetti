@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding: 0px 10%;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.header_icons {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header_icons i {
+  padding: 1px;
+}
+
+.header_benvenuto {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.header_logo img {
+  width: 300px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

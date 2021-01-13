@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f9fbfc;
+}
+
+i {
+  color: black;
+  font-size: 20px;
+}
+
+i:hover {
+  color: #ef7d00;
+}
+
+.myButton {
+  box-shadow: 2px 3px 0px 0px rgb(197, 201, 177);
+  background-color: #ededed;
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+.myButton:hover {
+  background-color: #bab1ba;
+  color: white;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.myButton_orange {
+  background: linear-gradient(to bottom, #ff8605 5%, #ff8640 100%);
+}
+.myButton_orange:hover {
+  background: linear-gradient(to bottom, #ff8640 5%, #ff8605 100%);
+}
+
+.myButton_green {
+  background: linear-gradient(to bottom, #50b433 5%, #50b468 100%);
+}
+.myButton_green:hover {
+  background: linear-gradient(to bottom, #50b468 5%, #50b433 100%);
+}

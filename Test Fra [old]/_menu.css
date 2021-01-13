@@ -1,0 +1,27 @@
+main {
+  padding: 40px;
+}
+
+main div .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+main div .pulsante {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+main .row .menu a img {
+  width: 180px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+main .row .menu a img:hover {
+  transform: scale(0.9);
+}

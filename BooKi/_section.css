@@ -1,0 +1,27 @@
+section {
+  padding: 40px;
+}
+
+section img {
+  width: 180px;
+  transition: transform 0.5s;
+}
+
+section img:hover {
+  transform: scale(0.9);
+}
+
+section .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+section .pulsante {
+  /* margin: 0; */
+  padding: 40px 30px 40px 1250px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
