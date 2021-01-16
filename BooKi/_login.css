@@ -1,0 +1,54 @@
+section img,
+.login,
+.bottone {
+  display: flex;
+  justify-content: center;
+}
+
+section img {
+  width: 300px;
+}
+
+section,
+.login {
+  padding-top: 10px;
+}
+
+.bottone {
+  padding-bottom: 20px;
+}
+
+section h1,
+h2 {
+  font-family: "Arial Grassetto", "Arial Normale", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  color: #333333;
+}
+h2 {
+  font-size: 14px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.textbox {
+  padding: 10px;
+  position: relative;
+}
+.textbox i {
+  position: absolute;
+  top: 56%;
+  left: 6.5%;
+  font-size: 15px;
+}
+.credenziali input {
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 0px rgb(197, 201, 177);
+  color: black;
+  padding: 2px 120px 2px 30px;
+  /* width: 80%; */
+}

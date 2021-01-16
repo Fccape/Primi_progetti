@@ -17,14 +17,14 @@ i:hover {
 .myButton {
   box-shadow: 2px 3px 0px 0px rgb(197, 201, 177);
   background-color: #ededed;
-  border-radius: 28px;
   display: inline-block;
   cursor: pointer;
   color: white;
   font-family: Arial;
-  font-size: 17px;
-  padding: 16px 31px;
+  font-size: 13px;
+  padding: 7px 31px;
   text-decoration: none;
+  border-radius: 50px;
 }
 .myButton:hover {
   background-color: #bab1ba;
@@ -47,4 +47,8 @@ i:hover {
 }
 .myButton_green:hover {
   background: linear-gradient(to bottom, #50b468 5%, #50b433 100%);
+}
+
+.extended {
+  padding: 10px 130px;
 }

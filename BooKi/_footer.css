@@ -1,24 +1,25 @@
 footer {
   background-color: #f9fbfc;
+  padding-top: 15px;
 }
 
 footer > * {
   color: #7e8090;
   font-family: "Roboto", Sans-serif;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 footer .design {
-  padding-top: 20px;
+  padding-top: 8px;
   color: #7e8090;
   font-family: "Roboto", Sans-serif;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 footer .link img {
-  width: 140px;
+  width: 110px;
   max-width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 footer ul {
@@ -38,7 +39,7 @@ footer .link a {
 footer h3 {
   color: #181b31;
   font-family: "Poppins", Sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 1.6em;
 }
