@@ -26,6 +26,7 @@ i:hover {
   text-decoration: none;
   border-radius: 50px;
 }
+
 .myButton:hover {
   background-color: #bab1ba;
   color: white;
@@ -51,4 +52,34 @@ i:hover {
 
 .extended {
   padding: 10px 130px;
+}
+
+h1,
+h2 {
+  font-family: "Arial Grassetto", "Arial Normale", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #6d6363;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+header {
+  min-height: 10vh;
+}
+
+.main {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  min-height: 20vh;
 }

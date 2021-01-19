@@ -1,6 +1,5 @@
 footer {
   background-color: #f9fbfc;
-  padding-top: 15px;
 }
 
 footer > * {
@@ -56,3 +55,16 @@ footer .design {
   align-items: center;
   justify-content: center;
 } */
+
+/* SMALL LAPTOP */
+@media only screen /*and (min-width: 1025px) */ and (max-width: 1366px) {
+}
+/* TABLET */
+@media only screen and (max-width: 1024px) {
+  footer {
+    min-height: auto;
+  }
+}
+/* MOBILE */
+@media only screen and (max-width: 767px) {
+}
