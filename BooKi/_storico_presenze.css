@@ -1,24 +1,61 @@
-.date_presenze {
-  padding: 50px;
-}
 .titolo_presenze {
   display: flex;
   text-align: center;
+  padding-bottom: 50px;
 }
 .date_presenze_inzio,
 .date_presenze_fine {
-  padding-top: 30px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.pulsante_presenze_indietro,
-.pulsante_presenze_cerca {
-  padding-top: 100px;
-}
 .date_presenze_inzio {
   display: flex;
+<<<<<<< HEAD
   text-align: left;
 }
 .date_presenze_fine {
   display: flex;
   text-align: right;
+=======
+  justify-content: flex-end;
+}
+.date_presenze_fine {
+  display: flex;
+  justify-content: flex-start;
+  /* text-align: right; */
+}
+
+.pulsante_presenze_indietro,
+.pulsante_presenze_cerca {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 200px;
+}
+
+.pulsanti li {
+  list-style-type: none;
+}
+
+.note {
+  margin-left: 40px;
+  margin-top: 10px;
+  width: 200px;
+  font-size: 12px;
+}
+
+.pulsante_presenze_indietro a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ef7d00;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.pulsante_presenze_indietro ul {
+  margin-top: 10px;
+>>>>>>> fa0f3877031beaabd2244dfe084ccaf4c67f55ea
 }
