@@ -1,0 +1,42 @@
+.form-select {
+  display: block;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  color: #212529;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 10px 6px;
+  border-radius: 5px;
+  appearance: none;
+}
+.section_postazione {
+  padding-top: 50px;
+}
+.h1_postazione,
+.h2_postazione {
+  font-family: "Arial Grassetto", "Arial Normale", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  color: #333333;
+}
+.h2_postazione {
+  font-size: 24px;
+}
+.titolo_postazione {
+  padding-top: 20px;
+}
+.container_data {
+  padding-top: 30px;
+}
+.titolo_postazione,
+.pulsante_postazione,
+.container_data {
+  display: flex;
+  justify-content: center;
+}
+.pulsante_postazione {
+  padding-top: 30px;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KG Desk</title>
+    <link rel="shortcut icon" href="source/favicon_KG.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+      rel="stylesheet"
+    />
+    <link href="_style.css" rel="stylesheet" type="text/css" />
+    <link href="_navbar.css" rel="stylesheet" type="text/css" />
+    <link href="_footer.css" rel="stylesheet" type="text/css" />
+    <link href="_selectsede.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <div class="row">
+            <div class="col header_icons">
+              <ul>
+                <li>
+                  <a href="home.html"><i class="fas fa-home"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-globe-americas"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-user-astronaut"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col header_logo">
+              <img src="source/logo_dark.png" />
+            </div>
+            <div class="col header_benvenuto">
+              <ul>
+                <li>Benvenuto: Jessica Giordano</li>
+                <li>
+                  <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    <section class="section_sede">
+      <div class= "container sede">
+        <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <div class="sede">
+            <div class="titolo_sede"><h2 class="h1_sede">Seleziona la sede</h2></div>
+            <select class="select_sede" required>
+              <option value="Choose..."></option>
+              <option value="">Torino - Corso Regina Margherita, 26</option>
+              <option value="">Roma</option>
+              <option value="">Padova - Corso Stati Uniti, 14/bis</option>
+              <option value="">Firenze - Via Rossellini, 10</option>
+              <option value="">Messina - Via Nino Bixio, 26</option>
+              <option value="">TMogliano Veneto - Piazza Duca D'Aosta, 30</option>       
+            </select>
+          </div>
+        <div class="societa">  
+          <div class="titolo_sede"><h2 class="h1_sede">Seleziona la società/area</h2></div>
+          <select class="select_societa" required>
+            <option value="Choose..."></option>
+            <option value="">Kirey DSO</option>
+            <option value="">Kirey IMA</option>
+            <option value="">Piemme Sistemi Srl</option>
+            <option value="">Insirio</option>      
+         </select>
+        </div>
+        <div class="pulsante_sede"><a href="#" class="myButton myButton_green super-extended">Prosegui</a></div>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </div>
+    </section>
+    <footer>
+      <div class="container">
+        <!-- <div class="row titolo">
+        <div class="col-4 titolo"><h3>Link utili</h3></div>
+        <div class="col-4 titolo"><h3>Info</h3></div>
+        <div class="col-4 titolo">
+          <img
+            src="https://www.kireygroup.com/wp-content/uploads/2020/07/Logokg.svg"
+            alt=""
+          />
+        </div>
+      </div> -->
+        <div class="row link">
+          <div class="col-4 link">
+            <ul>
+              <li><h3>Link utili</h3></li>
+              <li><a href="#">Kirey Group website</a></li>
+              <li><a href="#">Timesheet</a></li>
+              <li><a href="#">KG Learning</a></li>
+            </ul>
+          </div>
+          <div class="col-4 link">
+            <ul>
+              <li><h3>Info</h3></li>
+              <li><a href="mailto:kirey@pec.it">kirey@pec.it</a></li>
+              <li><b>PI/CF</b>: 06729880960</li>
+              <li><b>R.E.A.</b>: MI 1910802</li>
+              <li><b>Tel</b>: +39 02 78625200</li>
+            </ul>
+          </div>
+          <div class="col-4 link">
+            <ul>
+              <li>
+                <img
+                  src="https://www.kireygroup.com/wp-content/uploads/2020/07/Logokg.svg"
+                  alt=""
+                />
+              </li>
+              <li><b>We Shape Your Business</b></li>
+              <li>Via Benigno Crespi, 57</li>
+              <li>20159 Milano</li>
+              <br />
+              <li>
+                <a href="https://www.linkedin.com/company/11163476"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://github.com/kireygroup"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row design">
+          <div class="col-12 design">© 2021 | Designed by Kirey Group</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
