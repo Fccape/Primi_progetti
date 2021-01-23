@@ -44,3 +44,10 @@
   font-weight: bold;
   color: #ef7d00;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
+.pulsante_presenze_indietro ul {
+  margin-top: 10px;
+}
