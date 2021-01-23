@@ -11,15 +11,13 @@ sum(3, 6): {{ sum(3, 6) }} -->
 <br />
 <br />
 <br />
-<br />
-<br />
 <button [hidden]="url" (click)="renderImage()">Load</button>
 <button [hidden]="!url" (click)="nullifyImage()">unLoad</button>
-<br />
+<hr />
 
 <div *ngIf="url">
   <button (click)="heightValue = heightValue + 10">+</button>
   <button (click)="heightValue = heightValue - 10">-</button>
 </div>
-
+<hr />
 <img [height]="heightValue" [src]="url" />
