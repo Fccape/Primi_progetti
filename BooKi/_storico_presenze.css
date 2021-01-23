@@ -1,0 +1,24 @@
+.date_presenze {
+  padding: 50px;
+}
+.titolo_presenze {
+  display: flex;
+  text-align: center;
+}
+.date_presenze_inzio,
+.date_presenze_fine {
+  padding-top: 30px;
+}
+
+.pulsante_presenze_indietro,
+.pulsante_presenze_cerca {
+  padding-top: 100px;
+}
+.date_presenze_inzio {
+  display: flex;
+  flex: left;
+}
+.date_presenze_fine {
+  display: flex;
+  flex: right;
+}

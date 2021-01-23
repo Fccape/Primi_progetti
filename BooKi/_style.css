@@ -55,19 +55,30 @@ i:hover {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5 {
   font-family: "Arial Grassetto", "Arial Normale", "Arial", sans-serif;
   font-weight: 700;
   font-style: normal;
-  color: #6d6363;
+  color: #333333;
+}
+h1 {
+  font-size: 30px;
 }
 
 h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
   font-size: 14px;
 }
-
-h1 {
-  font-size: 20px;
+h5 {
+  font-size: 12px;
 }
 
 header {

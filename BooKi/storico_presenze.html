@@ -19,7 +19,7 @@
     <link href="_style.css" rel="stylesheet" type="text/css" />
     <link href="_navbar.css" rel="stylesheet" type="text/css" />
     <link href="_footer.css" rel="stylesheet" type="text/css" />
-    <link href="_selectsede.css" rel="stylesheet" type="text/css" />
+    <link href="_storico_presenze.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
@@ -52,49 +52,27 @@
         </div>
       </div>
     </header>
-    <section class="section_sede main">
-      <div class="container sede">
-        <div class="row">
-          <div class="col-4"></div>
-          <div class="col-4">
-            <div class="sede">
-              <div class="titolo_sede">
-                <h4 class="h1_sede">Seleziona la sede</h4>
-              </div>
-              <select class="select_sede" required>
-                <option value="Choose..."></option>
-                <option value="">Torino - Corso Regina Margherita, 26</option>
-                <option value="">Roma</option>
-                <option value="">Padova - Corso Stati Uniti, 14/bis</option>
-                <option value="">Firenze - Via Rossellini, 10</option>
-                <option value="">Messina - Via Nino Bixio, 26</option>
-                <option value="">
-                  TMogliano Veneto - Piazza Duca D'Aosta, 30
-                </option>
-              </select>
-            </div>
-            <div class="societa">
-              <div class="titolo_sede">
-                <h4>Seleziona la società/area</h4>
-              </div>
-              <select class="select_societa" required>
-                <option value="Choose..."></option>
-                <option value="">Kirey DSO</option>
-                <option value="">Kirey IMA</option>
-                <option value="">Piemme Sistemi Srl</option>
-                <option value="">Insirio</option>
-              </select>
-            </div>
-            <div class="pulsante_sede">
-              <a href="#" class="myButton myButton_green" style="padding: 10px 150px"
-                >Prosegui</a
-              >
-            </div>
-          </div>
-          <div class="col-4"></div>
+    <section class="section_presenze main">
+        <div class="container">
+        <div class=titolo_presenze><h1>Storico presenze</h1> </div>
+          <div class="row">
+            <div class="col-6">
+               <div class="date_presenze_inzio"><input type="date" /></div>
+           </div>
+            <div class="col-6">
+                <div class="date_presenze_fine"><input type="date" /></div>
+            </div> 
         </div>
-      </div>
-    </section>
+        <div class="row">
+            <div class="col-6">
+                <div class="pulsante_presenze_indietro"><a href="#" class="myButton myButton_orange" style="padding: 10px 60px;">Indietro</a></div>
+
+           </div>
+            <div class="col-6">
+                <div class="pulsante_presenze_cerca"><a href="#" class="myButton myButton_green" style="padding: 10px 60px;">Cerca</a></div>  
+            </div> 
+        </div>       
+      </section >
     <footer>
       <div class="container">
         <!-- <div class="row titolo">
