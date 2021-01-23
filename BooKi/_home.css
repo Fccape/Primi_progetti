@@ -9,7 +9,7 @@ section {
 }
 
 section img {
-  width: 120px;
+  width: 150px;
   transition: transform 0.5s;
 }
 
@@ -17,17 +17,32 @@ section img:hover {
   transform: scale(0.9);
 }
 
-section .col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-}
-
 section .pulsante {
   /* margin: 0; */
-  padding: 5px 30px 5px 800px;
+  /* padding: 5px 30px 5px 800px; */
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-right: -30px;
+}
+
+.box__item {
+  text-align: center;
+  padding: 15px;
+}
+
+/* SMALL LAPTOP */
+@media only screen /*and (min-width: 1025px) */ and (max-width: 1366px) {
+}
+/* TABLET */
+@media only screen and (max-width: 1024px) {
+  .main {
+    min-height: auto;
+  }
+}
+/* MOBILE */
+@media only screen and (max-width: 767px) {
+  section .pulsante {
+    margin-right: 0px;
+  }
 }

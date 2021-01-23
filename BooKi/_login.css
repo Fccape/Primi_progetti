@@ -18,37 +18,67 @@ section,
   padding-bottom: 20px;
 }
 
-section h1,
-h2 {
-  font-family: "Arial Grassetto", "Arial Normale", "Arial", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 16px;
-  color: #333333;
+section h1 {
+  text-align: center;
 }
-h2 {
-  font-size: 14px;
-}
-h1 {
-  display: flex;
-  justify-content: center;
-}
+
 .textbox {
   padding: 10px;
-  position: relative;
+  overflow: hidden;
 }
-.textbox i {
+
+.credenziali input {
+  font-size: 14px;
+  border: 1px solid #6d6363;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px 0px rgb(197, 201, 177);
+  color: #6d6363;
+  padding: 2px 120px 2px 30px;
+  outline: none;
+}
+
+/* input:focus + i,
+input:valid + i {
+  transform: translateY(+220%);
+}
+
+input:valid {
+  border: 2px solid #50b433;
+} */
+
+/* .textbox i {
   position: absolute;
   top: 56%;
   left: 6.5%;
   font-size: 15px;
+  transition: all 1s ease;
+} */
+.textbox__input {
+  position: relative;
 }
-.credenziali input {
-  font-size: 14px;
-  border: 1px solid black;
-  border-radius: 10px;
-  box-shadow: 0px 10px 10px 0px rgb(197, 201, 177);
-  color: black;
-  padding: 2px 120px 2px 30px;
-  /* width: 80%; */
+.textbox i {
+  position: absolute;
+  /* top: 49%;
+  left: 3.3%; */
+  width: 29px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  font-size: 15px;
+  color: white;
+  background-color: #333333;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+/* input:focus {
+  border: 1px solid #ff8605;
+} */
+
+input:valid + i {
+  background-color: #50b433;
+}
+
+input:valid {
+  border: 1px solid #50b433;
 }
