@@ -1,20 +1,26 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Collega } from './model/collega';
 
 @Component({
   selector: 'tabbar',
   template: `
     <div>
-      <button *ngFor="let tab of items" (click)="itemClickHandler(tab)">
+      <button
+        class="green"
+        [ngClass]="{ green: true }"
+        *ngFor="let tab of items"
+        (click)="itemClickHandler(tab)"
+      >
         {{ tab.cognome }}
       </button>
     </div>
   `,
 })
 export class TabbarComponent {
-  @Input() items: any;
-  @Output() onTabClick: EventEmitter<any> = new EventEmitter();
+  @Input() items!: Collega[];
+  @Output() onTabClick: EventEmitter<Collega> = new EventEmitter();
 
-  itemClickHandler(tab: any) {
+  itemClickHandler(tab: Collega) {
     this.onTabClick.emit(tab);
   }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Collega } from './components/model/collega';
 
 @Component({
   selector: 'app-root',
@@ -22,18 +23,21 @@ export class AppComponent {
   // public inc(): void {
   //   this.counter += 1;
   // }
-
-  public colleghi = [
+  public current: Collega;
+  public colleghi: Collega[] = [
     { id: 1, nome: 'Francesco', cognome: 'Carlomagno' },
     { id: 2, nome: 'Jessica', cognome: 'Giordano' },
     { id: 3, nome: 'Stefano', cognome: 'Bellorio' },
   ];
 
+  constructor() {
+    this.current = this.colleghi[0];
+  }
+
   public myName: string = '';
   public myCognome: string = '';
 
-  public mostra(tab: { nome: string; cognome: string }) {
-    this.myName = tab.nome;
-    this.myCognome = tab.cognome;
+  public mostra(tab: Collega) {
+    this.current = tab;
   }
 }

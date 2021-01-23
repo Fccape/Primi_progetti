@@ -24,5 +24,4 @@ sum(3, 6): {{ sum(3, 6) }} -->
 
 <tabbar [items]="colleghi" (onTabClick)="mostra($event)"></tabbar>
 <hr />
-
-<nominativi [nome]="myName" [cognome]="myCognome"></nominativi>
+<nominativi [nome]="current.nome" [cognome]="current.cognome"></nominativi>
