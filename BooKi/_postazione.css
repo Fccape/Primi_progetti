@@ -11,9 +11,7 @@
   border-radius: 5px;
   appearance: none;
 }
-.section_postazione {
-  padding-top: 50px;
-}
+
 .h1_postazione,
 .h2_postazione {
   font-family: "Arial Grassetto", "Arial Normale", "Arial", sans-serif;
@@ -23,7 +21,7 @@
   color: #333333;
 }
 .h2_postazione {
-  font-size: 24px;
+  font-size: 22px;
 }
 .titolo_postazione {
   padding-top: 20px;
