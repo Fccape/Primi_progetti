@@ -53,10 +53,8 @@ i:hover {
 .extended {
   padding: 10px 130px;
 }
-<<<<<<< HEAD
 .super-extended {
   padding: 10px 140px;
-=======
 
 h1,
 h2 {
@@ -86,5 +84,4 @@ header {
 
 footer {
   min-height: 20vh;
->>>>>>> 11f2915627b8568b4558b9bb9543061230c75638
 }
