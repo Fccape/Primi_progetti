@@ -22,4 +22,6 @@ sum(3, 6): {{ sum(3, 6) }} -->
 <hr />
 <img [height]="heightValue" [src]="url" /> -->
 
-<gmap nome="Francesco" eta="30"></gmap>
+<button [hidden]="myName" class="btn" (click)="mostra()">Show label</button>
+<button class="btn" [hidden]="!myName" (click)="nascondi()">Hide label</button>
+<gmap [nome]="myName" [eta]="myAge"></gmap>
