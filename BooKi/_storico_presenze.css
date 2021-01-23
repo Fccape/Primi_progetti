@@ -16,9 +16,9 @@
 }
 .date_presenze_inzio {
   display: flex;
-  flex: left;
+  text-align: left;
 }
 .date_presenze_fine {
   display: flex;
-  flex: right;
+  text-align: right;
 }
