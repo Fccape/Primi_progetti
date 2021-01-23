@@ -21,7 +21,11 @@ sum(3, 6): {{ sum(3, 6) }} -->
 </div>
 <hr />
 <img [height]="heightValue" [src]="url" /> -->
-
-<tabbar [items]="colleghi" (onTabClick)="mostra($event)"></tabbar>
+<h1>Referenti progettuali</h1>
+<tabbar
+  [active]="current"
+  [items]="colleghi"
+  (onTabClick)="mostra($event)"
+></tabbar>
 <hr />
 <nominativi [nome]="current.nome" [cognome]="current.cognome"></nominativi>

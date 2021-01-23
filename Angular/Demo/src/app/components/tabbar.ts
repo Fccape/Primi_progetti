@@ -6,12 +6,12 @@ import { Collega } from './model/collega';
   template: `
     <div>
       <button
-        class="green"
-        [ngClass]="{ green: true }"
+        class="btn btn-secondary"
+        [ngClass]="{ 'btn-success': active?.id === tab.id }"
         *ngFor="let tab of items"
         (click)="itemClickHandler(tab)"
       >
-        {{ tab.cognome }}
+        {{ tab.progetto }}
       </button>
     </div>
   `,
@@ -19,6 +19,7 @@ import { Collega } from './model/collega';
 export class TabbarComponent {
   @Input() items!: Collega[];
   @Output() onTabClick: EventEmitter<Collega> = new EventEmitter();
+  @Input() active?: Collega;
 
   itemClickHandler(tab: Collega) {
     this.onTabClick.emit(tab);

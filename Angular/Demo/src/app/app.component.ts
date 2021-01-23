@@ -25,9 +25,9 @@ export class AppComponent {
   // }
   public current: Collega;
   public colleghi: Collega[] = [
-    { id: 1, nome: 'Francesco', cognome: 'Carlomagno' },
-    { id: 2, nome: 'Jessica', cognome: 'Giordano' },
-    { id: 3, nome: 'Stefano', cognome: 'Bellorio' },
+    { id: 1, nome: 'Rita', cognome: 'Lepore', progetto: 'SHS' },
+    { id: 2, nome: 'Jessica', cognome: 'Giordano', progetto: 'Tagetik' },
+    { id: 3, nome: 'Stefano', cognome: 'Bellorio', progetto: 'Libra' },
   ];
 
   constructor() {
