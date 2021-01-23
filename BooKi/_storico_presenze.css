@@ -39,12 +39,8 @@
   font-size: 12px;
 }
 
-.pulsante_presenze_indietro {
+.pulsante_presenze_indietro a {
   text-decoration: none;
+  font-weight: bold;
   color: #ef7d00;
-}
-
-/* NON funziona */
-a {
-  cursor: pointer;
 }
