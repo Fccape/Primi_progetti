@@ -22,15 +22,24 @@ export class AppComponent {
   // public inc(): void {
   //   this.counter += 1;
   // }
-  public myName: string = '';
-  public myAge: string = '';
 
-  public mostra() {
-    this.myName = 'Francesco';
-    this.myAge = '30';
+  public colleghi = [
+    { id: 1, nome: 'Francesco', cognome: 'Carlomagno' },
+    { id: 2, nome: 'Jessica', cognome: 'Giordano' },
+    { id: 3, nome: 'Stefano', cognome: 'Bellorio' },
+  ];
+
+  public amici = [1, 2, 3];
+
+  public myName: string = '';
+  public myCognome: string = '';
+
+  public mostra(tab: { nome: string; cognome: string }) {
+    this.myName = tab.nome;
+    this.myCognome = tab.cognome;
   }
-  public nascondi() {
-    this.myName = '';
-    this.myAge = '';
-  }
+  // public nascondi() {
+  //   this.myName = '';
+  //   this.myAge = '';
+  // }
 }

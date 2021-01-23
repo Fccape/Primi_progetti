@@ -22,6 +22,8 @@ sum(3, 6): {{ sum(3, 6) }} -->
 <hr />
 <img [height]="heightValue" [src]="url" /> -->
 
-<button [hidden]="myName" class="btn" (click)="mostra()">Show label</button>
-<button class="btn" [hidden]="!myName" (click)="nascondi()">Hide label</button>
-<gmap [nome]="myName" [eta]="myAge"></gmap>
+<tabbar [items]="colleghi" (onTabClick)="mostra($event)"></tabbar>
+<hr />
+<!-- <button [hidden]="myName" (click)="mostra()">Show label</button>
+<button [hidden]="!myName" (click)="nascondi()">Hide label</button> -->
+<nominativi [nome]="myName" [cognome]="myCognome"></nominativi>
