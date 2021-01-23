@@ -12,16 +12,11 @@
   appearance: none;
 }
 
-.h1_postazione,
-.h2_postazione {
-  font-family: "Arial Grassetto", "Arial Normale", "Arial", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 30px;
-  color: #333333;
+.h1_postazione {
+  font-size: 24px;
 }
 .h2_postazione {
-  font-size: 22px;
+  font-size: 20px;
 }
 .titolo_postazione {
   padding-top: 20px;
@@ -29,6 +24,9 @@
 .container_data {
   padding-top: 30px;
 }
+input[date] {
+}
+
 .titolo_postazione,
 .pulsante_postazione,
 .container_data {
