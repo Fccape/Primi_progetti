@@ -29,8 +29,6 @@ export class AppComponent {
     { id: 3, nome: 'Stefano', cognome: 'Bellorio' },
   ];
 
-  public amici = [1, 2, 3];
-
   public myName: string = '';
   public myCognome: string = '';
 
@@ -38,8 +36,4 @@ export class AppComponent {
     this.myName = tab.nome;
     this.myCognome = tab.cognome;
   }
-  // public nascondi() {
-  //   this.myName = '';
-  //   this.myAge = '';
-  // }
 }
