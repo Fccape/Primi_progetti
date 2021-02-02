@@ -1,16 +1,16 @@
 <!-- Counter + 10: {{ counter + 10 }}
 sum(3, 6): {{ sum(3, 6) }} -->
-
+<!-- ***** 1° stream ***** -->
 <!-- <h1>{{ counter }}</h1>
 <div [ngClass]="counter > 5 ? 'red' : 'blue'">
   Counter is {{ counter > 5 ? "too high" : "too low" }}
 </div>
-
 <button (click)="inc()">+</button>
 <button (click)="counter = counter - 1">-</button>
 <br />
 <br />
 <br />
+
 <button [hidden]="url" (click)="renderImage()">Load</button>
 <button [hidden]="!url" (click)="nullifyImage()">unLoad</button>
 <hr />
@@ -21,11 +21,47 @@ sum(3, 6): {{ sum(3, 6) }} -->
 </div>
 <hr />
 <img [height]="heightValue" [src]="url" /> -->
-<h1>Referenti progettuali</h1>
+<!-- ***** Fine 1° stream ***** -->
+<!-- ***** YouTube  ***** -->
+<!-- <h1>Referenti progettuali</h1>
 <tabbar
   [active]="current"
   [items]="colleghi"
   (onTabClick)="mostra($event)"
 ></tabbar>
 <hr />
-<nominativi [nome]="current.nome" [cognome]="current.cognome"></nominativi>
+<nominativi [nome]="current.nome" [cognome]="current.cognome"></nominativi> -->
+<!-- ***** Fine YouTube  ***** -->
+<!-- ***** 2° stream ***** -->
+<!-- <div class="user" *ngFor="let user of users">
+  <div
+    class="id"
+    [ngClass]="{ male: user.gender === 'M', female: user.gender === 'F' }"
+  >
+    {{ user.id }}
+  </div>
+  <b
+    ><div class="name">
+      {{ user.name }}
+    </div></b
+  >
+  <div>
+    Age: <b>{{ user.age }}</b>
+  </div>
+  <div>
+    Gender: <b>{{ user.gender }}</b>
+  </div>
+  <div>
+    City: <b>{{ user.city }}</b>
+  </div>
+  <div>
+    Birthday: <b>{{ user.birthday | date }}</b>
+  </div>
+  <div>
+    Birthday: <b>{{ user.birthday | date: "dd-MM-yyyy" }}</b>
+  </div>
+  <div>
+    Bitcoins: <b>{{ user.bitcoins | number: "1.1-2" }}</b>
+  </div>
+</div> -->
+<!-- ***** Fine 2° stream ***** -->
