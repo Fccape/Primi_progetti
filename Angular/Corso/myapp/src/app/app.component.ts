@@ -1,21 +1,33 @@
+import { User, Company } from './model/user';
 import { Component } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   // templateUrl: './app.component.html',
   template: `
-    <li *ngFor="let user of users">{{ user.id }} {{ user.name }}</li>
+    <div
+      *ngFor="
+        let user of users;
+        let i = index;
+        let dispari = odd;
+        let last = last
+      "
+    >
+      {{ i + 1 }}. {{ user.name }} {{ user.company.name }}
+      <div *ngIf="dispari"><hr /></div>
+      <div *ngIf="last">End of list</div>
+    </div>
   `,
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  users = [
-    { id: 1, name: 'Francesco' },
-    { id: 2, name: 'Jessica' },
-    { id: 3, name: 'Stefano' },
-  ];
+  users!: User[];
 
-  constructor() {
-    this.users.push;
+  constructor(http: HttpClient) {
+    setTimeout(() => {
+      http
+        .get<User[]>('https://jsonplaceholder.typicode.com/users')
+        .subscribe((result) => (this.users = result));
+    }, 1000);
   }
 }
