@@ -1,0 +1,18 @@
+.male {
+  color: blue;
+}
+.female {
+  color: red;
+}
+input {
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+}
+.error {
+  border-color: red;
+}
+
+.corretto {
+  border-color: lightgreen;
+}

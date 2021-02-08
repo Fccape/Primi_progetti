@@ -1,0 +1,45 @@
+*** Form ***
+  <form #F="ngForm" (submit)="add(F)">
+    <input
+      type="text"
+      placeholder="add user name"
+      [ngModel]="user?.label"
+      name="label"
+      required
+      minlength="3"
+      #labelRef="ngModel"
+      [ngClass]="{
+        error: labelRef.invalid && F.dirty,
+        corretto: labelRef.valid
+      }"
+    />
+    <div *ngIf="labelRef.errors?.minlength">
+      Troppo corto mancano
+      {{
+        labelRef.errors?.minlength.requiredLength -
+          labelRef.errors?.minlength.actualLength
+      }}
+    </div>
+    <div *ngIf="labelRef.errors?.required">Il campo è obbligatorio</div>
+    <br />
+    <input
+      type="number"
+      placeholder="add age"
+      [ngModel]="user?.age"
+      name="age"
+      required
+      #ageRef="ngModel"
+      [ngClass]="{ error: ageRef.invalid && F.dirty, corretto: ageRef.valid }"
+    />
+    <div *ngIf="ageRef.errors?.minlength">Il campo è troppo corto</div>
+    <div *ngIf="ageRef.errors?.required">Il campo è obbligatorio</div>
+
+    <button type="submit" [disabled]="F.invalid">
+      {{ user ? "EDIT" : "ADD" }}
+    </button>
+  </form>
+  <li *ngFor="let user of users">{{ user.label }} - {{ user.age }}</li>
+  <pre>
+    {{ labelRef.errors | json }}
+  </pre>
+  
