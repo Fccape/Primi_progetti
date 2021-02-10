@@ -1,0 +1,6 @@
+<div class="card mb-3">
+  <div class="card-header" (click)="opened = !opened">{{ title }}</div>
+  <div class="card-body" *ngIf="opened">
+    <ng-content #name></ng-content>
+  </div>
+</div>

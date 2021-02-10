@@ -1,0 +1,1 @@
+export const APP_TOKEN = '6b076e4690626887b8547c8e0803fe7e';

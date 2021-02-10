@@ -1,0 +1,7 @@
+<div *ngIf="weather">
+  <h1>{{ city.value }}</h1>
+  <h3>{{ weather?.main.temp }}°</h3>
+  <h6>{{ weather?.weather[0].main }}</h6>
+  <!-- <pre>{{ weather | json }}</pre> -->
+</div>
+{{ printme() }}

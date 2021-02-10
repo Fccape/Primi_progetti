@@ -1,0 +1,12 @@
+<ul class="nav nav-tabs">
+  <li class="nav-item" *ngFor="let item of items" (click)="action(item)">
+    <a
+      class="nav-link"
+      aria-current="page"
+      href="#"
+      [ngClass]="{ active: active?.id === item.id }"
+    >
+      {{ item.name }}
+    </a>
+  </li>
+</ul>
