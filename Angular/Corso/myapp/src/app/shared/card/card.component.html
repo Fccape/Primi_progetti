@@ -1,6 +1,6 @@
-<div class="card mb-3">
-  <div class="card-header" (click)="opened = !opened">{{ title }}</div>
-  <div class="card-body" *ngIf="opened">
+<div class="card bg-dark text-white mb-1">
+  <div class="card-header" (click)="toggle()">{{ title }}</div>
+  <div class="card-body" style="overflow: hidden" [@collapsable]="state">
     <ng-content #name></ng-content>
   </div>
 </div>
